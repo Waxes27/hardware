@@ -32,4 +32,15 @@ public class HardwareService {
 
         hardwareRepository.save(hardware);
     }
+
+    public void markHardwareAsRemoved(String serial){
+        System.out.println(serial);
+        Optional<Hardware> hardwareOptional = hardwareRepository.findHardwareBySerialNumber(serial);
+
+        if (!hardwareOptional.isPresent()){
+            throw new IllegalStateException("Serial Number "+serial+" not Found");
+        }
+
+        hardwareRepository.delete(hardwareOptional.get());
+    }
 }

@@ -28,4 +28,9 @@ public class HardwareController {
         service.addNewHardware(hardware);
 
     }
+
+    @DeleteMapping(path = "{hardwareSerial}")
+    public void removeHardware(@PathVariable("hardwareSerial") String serial){
+        service.markHardwareAsRemoved(serial);
+    }
 }
