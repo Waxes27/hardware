@@ -1,4 +1,4 @@
-package co.za.wethinkcode.management.hardware.models;
+package za.co.wethinkcode.management.hardware.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

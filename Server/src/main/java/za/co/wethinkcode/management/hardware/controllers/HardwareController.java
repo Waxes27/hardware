@@ -1,7 +1,7 @@
-package co.za.wethinkcode.management.hardware.controllers;
+package za.co.wethinkcode.management.hardware.controllers;
 
-import co.za.wethinkcode.management.hardware.models.Hardware;
-import co.za.wethinkcode.management.hardware.services.HardwareService;
+import za.co.wethinkcode.management.hardware.models.Hardware;
+import za.co.wethinkcode.management.hardware.services.HardwareService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

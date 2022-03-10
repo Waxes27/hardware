@@ -1,7 +1,7 @@
-package co.za.wethinkcode.management.hardware.services;
+package za.co.wethinkcode.management.hardware.services;
 
-import co.za.wethinkcode.management.hardware.models.Hardware;
-import co.za.wethinkcode.management.hardware.repositories.HardwareRepository;
+import za.co.wethinkcode.management.hardware.models.Hardware;
+import za.co.wethinkcode.management.hardware.repositories.HardwareRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

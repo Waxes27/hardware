@@ -1,7 +1,7 @@
-package co.za.wethinkcode.management.hardware.config;
+package za.co.wethinkcode.management.hardware.config;
 
-import co.za.wethinkcode.management.hardware.models.Hardware;
-import co.za.wethinkcode.management.hardware.repositories.HardwareRepository;
+import za.co.wethinkcode.management.hardware.models.Hardware;
+import za.co.wethinkcode.management.hardware.repositories.HardwareRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;

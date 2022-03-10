@@ -8,7 +8,7 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>co.za.wethinkcode</groupId>
+	<groupId>za.co.wethinkcode</groupId>
 	<artifactId>management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>management</name>
@@ -55,6 +55,45 @@
 
 	<build>
 		<plugins>
+		<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>${start-class}</mainClass>
+                </configuration>
+                  <executions>
+                    <execution>
+                      <goals>
+                        <goal>repackage</goal>
+                      </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.2-beta-5</version>
+              <configuration>
+                <archive>
+                  <manifest>
+                    <addClasspath>true</addClasspath>
+                    <mainClass>za.co.wethinkcode.management.ManagementApplication</mainClass>
+                  </manifest>
+                </archive>
+                <descriptorRefs>
+                  <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+              </configuration>
+              <executions>
+                <execution>
+                  <id>assemble-all</id>
+                  <phase>package</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+                </execution>
+              </executions>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
