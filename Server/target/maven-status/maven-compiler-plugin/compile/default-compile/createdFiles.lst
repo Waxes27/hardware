@@ -1,6 +1,0 @@
-za/co/wethinkcode/management/hardware/config/HardwareConfig.class
-za/co/wethinkcode/management/ManagementApplication.class
-za/co/wethinkcode/management/hardware/repositories/HardwareRepository.class
-za/co/wethinkcode/management/hardware/services/HardwareService.class
-za/co/wethinkcode/management/hardware/models/Hardware.class
-za/co/wethinkcode/management/hardware/controllers/HardwareController.class
