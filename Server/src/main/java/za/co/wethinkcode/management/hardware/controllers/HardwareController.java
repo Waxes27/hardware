@@ -31,6 +31,7 @@ public class HardwareController {
 
     @DeleteMapping(path = "{hardwareSerial}")
     public void removeHardware(@PathVariable("hardwareSerial") String serial){
+        // System.out.println("SERIAL HERE:   "+serial);
         service.markHardwareAsRemoved(serial);
     }
 }
