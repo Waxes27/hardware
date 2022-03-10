@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.za.wethinkcode.management.ManagementApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.026 s - in co.za.wethinkcode.management.ManagementApplicationTests

@@ -1,0 +1,6 @@
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/hardware/services/HardwareService.java
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/hardware/models/Hardware.java
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/hardware/controllers/HardwareController.java
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/ManagementApplication.java
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/hardware/repositories/HardwareRepository.java
+/home/waxes27/hardware/Server/src/main/java/co/za/wethinkcode/management/hardware/config/HardwareConfig.java
