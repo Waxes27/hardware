@@ -3,10 +3,7 @@ package za.co.wethinkcode.management.hardware.controllers;
 import za.co.wethinkcode.management.hardware.models.Hardware;
 import za.co.wethinkcode.management.hardware.services.HardwareService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.security.PermitAll;
 import java.util.List;
 
 @RestController
