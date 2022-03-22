@@ -1,3 +1,4 @@
+import 'package:client/screens/home.dart';
 import 'package:client/widgets/bottom_app.dart';
 import 'package:flutter/material.dart';
 
@@ -10,27 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      bottomNavigationBar: const BottomAppBar(
-        child: BottomNeumorphismAppBar(),
-      ),
     );
   }
 }

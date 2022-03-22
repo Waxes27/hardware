@@ -8,20 +8,16 @@ class NeumorphicButton extends StatefulWidget {
   State<NeumorphicButton> createState() => _NeumorphicButtonState();
 }
 
-class _NeumorphicButtonState extends State<NeumorphicButton>{
+class _NeumorphicButtonState extends State<NeumorphicButton> {
   bool _isElevated = false;
   var isHover = false;
-
-  // get title => title;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          // print("Val--->{}$val");
           setState(() {
             _isElevated = !_isElevated;
-            // sleep(Duration(seconds: 2));
             print(_isElevated);
           });
         },
@@ -37,14 +33,6 @@ class _NeumorphicButtonState extends State<NeumorphicButton>{
           padding: const EdgeInsets.all(30),
           // child: InkWell(
           child: const Text("Button"),
-          // onTap: () {
-          //   // print("Val--->{}$val");
-          //   setState(() {
-          //     _isElevated = !_isElevated;
-          //     // sleep(Duration(seconds: 2));
-          //     print(_isElevated);
-          //   });
-          // }),
           decoration: !_isElevated
               ? BoxDecoration(
                   color: Colors.grey[300],
