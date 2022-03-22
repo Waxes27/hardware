@@ -6,9 +6,9 @@ import 'dart:convert';
 
 String ip = "localhost";
 String port = "8080";
-Hardwares hardwares = Hardwares();
 
 Future<Hardwares> getAllHardware() async {
+  Hardwares hardwares = Hardwares();
   hardwares.clear();
 
   String modifier = "api/v1/hardware";
@@ -20,16 +20,17 @@ Future<Hardwares> getAllHardware() async {
     HttpHeaders.contentTypeHeader: "application/json",
   });
 
-  print(response.body);
-  List val = await json.decode(response.body);
 
-  for (Map item in val) {
-    print(item);
-    hardwares.add(Hardware.fromJson(item));
-    
+  for (Map item in await jsonDecode(response.body)) {
+    hardwares.add(Hardware.fromJson({
+      "id": item["id"],
+      "brand": item["brand"],
+      "date": item["date"],
+      "model": item["model"],
+      "name": item["name"],
+      "serialNumber": item["serialNumber"]
+    }));
   }
-
-  print(hardwares.hardwareList);
 
   return hardwares;
 }

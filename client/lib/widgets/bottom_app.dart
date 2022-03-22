@@ -17,7 +17,6 @@ class _BottomNeumorphismAppBarState extends State<BottomNeumorphismAppBar> {
       onHover: (value) {
         setState(() {
           containerHeight = 200;
-          print(value);
         });
       },
       child: Container(

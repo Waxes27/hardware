@@ -18,7 +18,6 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
         onTap: () {
           setState(() {
             _isElevated = !_isElevated;
-            print(_isElevated);
           });
         },
         onTapUp: (details) {
