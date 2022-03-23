@@ -5,6 +5,7 @@ class Hardwares {
 
   void add(Hardware item) {
     hardwareList.add(item);
+    print("ADDED...");
   }
 
   void clear() {

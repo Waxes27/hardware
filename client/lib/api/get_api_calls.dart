@@ -20,15 +20,17 @@ Future<Hardwares> getAllHardware() async {
     HttpHeaders.contentTypeHeader: "application/json",
   });
 
+  List data = await jsonDecode(response.body);
+  print(data);
 
-  for (Map item in await jsonDecode(response.body)) {
+  for (Map item in data) {
     hardwares.add(Hardware.fromJson({
-      "id": item["id"],
-      "brand": item["brand"],
-      "date": item["date"],
-      "model": item["model"],
-      "name": item["name"],
-      "serialNumber": item["serialNumber"]
+      "id": "${item['id']}",
+      "name": item['name'],
+      "serialNumber": item['serialNumber'],
+      "model": item['model'],
+      "date": "${item['date']}",
+      "brand": item['brand'],
     }));
   }
 

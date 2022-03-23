@@ -1,5 +1,5 @@
 class Hardware {
-  int id;
+  String id;
   String brand;
   String model;
   String serialNumber;
@@ -15,24 +15,8 @@ class Hardware {
       required this.date});
 
   factory Hardware.fromJson(Map json) {
-    // print("Decoding...");
-    // print(json["id"]);
-    // print(json["brand"]);
-    // print(json["model"]);
-    // print(json["serialNumber"]);
-    // print(json["name"]);
-    // print(json["date"]);
-    // print(Hardware(
-    //   id: int.parse(json["id"]),
-    //   brand: json["brand"],
-    //   model: json["model"],
-    //   serialNumber: json["serialNumber"],
-    //   name: json["name"],
-    //   date: json["date"],
-    // ));
-
     return Hardware(
-      id: int.parse(json["id"]),
+      id: json["id"],
       brand: json["brand"],
       model: json["model"],
       serialNumber: json["serialNumber"],
@@ -41,5 +25,11 @@ class Hardware {
     );
   }
 
+  String getId() => id;
   String getBrand() => brand;
+  String getModel() => model;
+  String getSerialNumber() => serialNumber;
+  String getName() => name;
+  String getDate() => date;
+  
 }
